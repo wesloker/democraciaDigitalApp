@@ -2,12 +2,10 @@
 const
     express = require('express'),
     app = express(),
-    pug = require('pug'),
     path = require('path'),
     morgan = require('morgan'),
     bodyParser = require('body-parser'),
     port = 3000,
-    dbConf = require(path.join(process.cwd(), 'app', 'models', 'dbConf')),
     router = require(path.join(process.cwd(), 'app', 'routes')),
     viewsDir = path.join(process.cwd(), 'app', 'views'),
     publicDir = express.static(path.join(process.cwd(), 'app', 'public'));
